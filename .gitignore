@@ -1,16 +1,56 @@
 # Godot 4+ specific ignores
 .godot/
-.nomedia
+.android/
+/addons
+/Ignored
+/ImageEditor
+/Build
 
-# Godot-specific ignores
-.import/
-export.cfg
-export_credentials.cfg
-
-# Imported translations (automatically generated from CSV files)
+# Godot generated/imported assets
+*.import
+*.tmp
 *.translation
+export_presets.cfg
+icon.svg*
 
-# Mono-specific ignores
-.mono/
-data_*/
-mono_crash.*.json
+# Visual Studio 2022 ignores
+.vs/
+*.vcxproj
+*.vcxproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ncb
+*.opendb
+*.obj
+*.pdb
+*.idb
+*.ipch
+*.db
+*.cachefile
+*.aps
+*.dbmdl
+*.bak
+*.log
+*.tlog
+*.lastbuildstate
+*.ilk
+*.meta
+*.iobj
+*.ipdb
+*.res
+*.pch
+
+# Rider / IntelliJ / JetBrains IDEs
+.idea/
+*.sln.iml
+*.iws
+*.iml
+out/
+cmake-build-*/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
