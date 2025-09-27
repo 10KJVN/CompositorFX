@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ywc6al1rmo01"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vho56"]
+
+[sub_resource type="Environment" id="Environment_7dm0k"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_ig7tw"]
+
+[sub_resource type="Compositor" id="Compositor_7dm0k"]
+
+[node name="root" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_vho56")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7dm0k")
+camera_attributes = SubResource("CameraAttributesPractical_ig7tw")
+compositor = SubResource("Compositor_7dm0k")
